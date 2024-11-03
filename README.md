@@ -1,5 +1,5 @@
 # Forest Fire Prediction App
-This app use ensembel XGBoost bagging classifier to predict the probability of forest fire in 
+This Flask app use ensembel XGBoost bagging classifier to predict the probability of forest fire in 
 based on variable like wind speed, humidity etc. 
 Steps
 1. Preprocessed and saved the dataset
