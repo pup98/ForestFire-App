@@ -23,7 +23,7 @@ print(y_resample.shape)
 X_train, X_test,y_train,y_test = train_test_split(X_resample, y_resample, test_size=0.2,random_state=0)
 
 tree = XGBClassifier()
-model = BaggingClassifier(base_estimator=tree, n_estimators=40, random_state=0)
+model = BaggingClassifier(estimator=tree, n_estimators=40, random_state=0)
 model.fit(X_train,y_train)
 pickle.dump(model, open('model.pkl','wb'))
 
